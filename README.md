@@ -15,7 +15,13 @@ This project is both fascinating and challenging, where we will be working with 
   ## .the tasks:
   since I structured the tasks in a strict order eat, sleep,and then think,it made the project more manageable. My primary focus initially was to ensure that all philosophers could eat without any of them dying or any other problem would rise up within 800 ms (t_die) and that each philosopher had a 200 ms time limit to eat. Later in the project, I added the sleeping and thinking components.
  ## .timestamps:
-  
+  Timestamps are like markers that show when each philosopher completes a task. Since all philosophers start the simulation at the same time, timestamps help us keep track of when they eat, sleep, and perform other actions. To calculate the time taken for each task, we use the difference between the current time and the simulation's start time. We can retrieve these time values using the gettimeofday function.
+ ## .time for them to die:
+   
+
+
+
+
 
 
 
