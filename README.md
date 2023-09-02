@@ -24,7 +24,7 @@ This project is both fascinating and challenging, where we will be working with 
   .When you use <pthread_join> in your main thread, it implies that when you run the program and it reaches that particular line of code, it will pause there until the specified thread completes its task.So, it's essential to keep this in mind while implementing the code
 
 # Testing
-  .https://github.com/MichelleJiam/LazyPhilosophersTester
+  .https://github.com/MichelleJiam/LazyPhilosophersTester              
   .to test data race add the flag (-fsanitize=address) while running the program
 # Bonus
   The only difference between the bonus part and the mandatory part is instead of using multithreading concepts, we will be using multiprocessing concepts.In this context, the threads will be replaced by child processes, while the main thread acting as the parent process. Additionally, you will work with semaphores instead of mutexes.                     
