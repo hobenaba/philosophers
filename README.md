@@ -21,7 +21,7 @@ This project is both fascinating and challenging, where we will be working with 
   The condition for checking philosopher deaths involves a comparison between the following data the time of each philosopher's last meal plus the known t_die , and the current time.
 # Things to put in mind
   .with the use of usleep function, our timestamps won’t be as accurate as we need them to be, which could lead to the death of one of the philosophers or other problems, to address this, it is crucial to implement and use your own usleep function.                      
-  .When you use <pthread_join> in your main thread, it implies that when you run the program and it reaches that particular line of code, it will pause there until the specified thread completes its task.So, it's essential to keep this in mind while implementing the code
+  .When you use 'pthread_join' in your main thread, it implies that when you run the program and it reaches that particular line of code, it will pause there until the specified thread completes its task.So, it's essential to keep this in mind while implementing the code
 
 # Testing
   .https://github.com/MichelleJiam/LazyPhilosophersTester              
