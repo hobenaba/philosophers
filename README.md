@@ -27,7 +27,7 @@ This project is both fascinating and challenging, where we will be working with 
   .https://github.com/MichelleJiam/LazyPhilosophersTester              
   .To test for data races, add the flag '-fsanitize=thread' while running the program.
 # Bonus
-  The only difference between the bonus part and the mandatory part is instead of using multithreading concepts, we will be using multiprocessing concepts.In this context, the threads will be replaced by child processes, while the main thread acting as the parent process. Additionally, you will work with semaphores instead of mutexes.                     
+  The only difference between the bonus part and the mandatory part is instead of using multithreading concepts, we will be using multiprocessing concepts.In this context, the threads will be replaced by child processes, while the main thread acting as the parent process. Additionally, you will work with semaphores instead of mutexes.                              
   To explain this with an analogy: When starting the simulation and having, let's say, 7 philosophers, which means we have 7 forks at the center of the table, the philosophers will simply take forks as they are served. With semaphores, we initialize them with the total number of forks available, essentially telling the philosophers, 'ATTENTION, we have this many forks available.' When a philosopher takes a fork, we decrement the count of available forks, and the reverse is true when they put a fork back.
 
 
