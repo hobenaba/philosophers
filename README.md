@@ -17,14 +17,14 @@ This project is both fascinating and challenging, where we will be working with 
  ## .timestamps:
   Timestamps are like markers that show when each philosopher completes a task. Since all philosophers start the simulation at the same time, timestamps help us keep track of when they eat, sleep, and perform other actions. To calculate the time taken for each task, we use the difference between the current time and the simulation's start time. We can retrieve these time values using the gettimeofday function.
  ## .time for them to die:
-   In our simulation, each philosopher runs as an independent thread in their infinite loop. To check if any philosopher has died, we got to implement a supervising function within our main thread (process). This function operates in an infinite loop as well.
-The condition for checking philosopher deaths involves a comparison between the following data the time of each philosopher's last meal plus the known t_die , and the current time.
+   In our simulation, each philosopher runs as an independent thread in their infinite loop. To check if any philosopher has died, we got to implement a supervising function within our main thread (process). This function operates in an infinite loop as well.                         
+  The condition for checking philosopher deaths involves a comparison between the following data the time of each philosopher's last meal plus the known t_die , and the current time.
 # Things to put in mind
-  .with the use of usleep function, our timestamps won’t be as accurate as we need them to be, which could lead to the death of one of the philosophers or other problems, to address this, it is crucial to implement and use your own usleep function.
+  .with the use of usleep function, our timestamps won’t be as accurate as we need them to be, which could lead to the death of one of the philosophers or other problems, to address this, it is crucial to implement and use your own usleep function.                      
   .When you use <pthread_join> in your main thread, it implies that when you run the program and it reaches that particular line of code, it will pause there until the specified thread completes its task.So, it's essential to keep this in mind while implementing the code
 
 # BONUS
-  The only difference between the bonus part and the mandatory part is instead of using multithreading concepts, we will be using multiprocessing concepts.In this context, the threads will be replaced by child processes, while the main thread acting as the parent process. Additionally, you will work with semaphores instead of mutexes.
+  The only difference between the bonus part and the mandatory part is instead of using multithreading concepts, we will be using multiprocessing concepts.In this context, the threads will be replaced by child processes, while the main thread acting as the parent process. Additionally, you will work with semaphores instead of mutexes.                     
   To explain this with an analogy: When starting the simulation and having, let's say, 7 philosophers, which means we have 7 forks at the center of the table, the philosophers will simply take forks as they are served. With semaphores, we initialize them with the total number of forks available, essentially telling the philosophers, 'ATTENTION, we have this many forks available.' When a philosopher takes a fork, we decrement the count of available forks, and the reverse is true when they put a fork back.
 
 
