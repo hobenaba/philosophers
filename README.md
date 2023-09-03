@@ -1,5 +1,5 @@
 # Introduction
-This project is both fascinating and challenging, where we will be working with threads and learn how to handle them effectively. The core idea of this project is to create a simulation with multiple philosophers of your choice. These philosophers will exist in a simulated world where they eat, sleep, and think. but here's the twist: they can only eat when they have two forks, and the simulation starts all at once, with all philosophers in motion. and our job is to manage and organize the simulation.
+This project is both fascinating and challenging, where we will be working with threads and learn how to handle them effectively. The core idea of this project is to create a simulation with multiple philosophers of your choice, each having his own fork.These philosophers will exist in a simulated world where they eat, sleep, and think. but here's the twist: they can only eat when they have two forks, and the simulation starts all at once, with all philosophers in motion. and our job is to manage and organize the simulation.
 # let's start with the beginning
   ## .what is a thread?
   When we run a program, it's managed by a process, and this process may utilize multiple CPU cores, depending on the device's capabilities. Each CPU core acts like an employee, handling one instruction of code at a time as directed by the process, which acts like a manager. In the context of threads, think of a thread as a task assigned to a core.The core then processes and executes the instructions associated with that particular thread.
@@ -22,13 +22,13 @@ This project is both fascinating and challenging, where we will be working with 
 # Things to put in mind
   .with the use of usleep function, our timestamps won’t be as accurate as we need them to be, which could lead to the death of one of the philosophers or other problems, to address this, it is crucial to implement and use your own usleep function.                      
   .When you use 'pthread_join' in your main thread, it implies that when you run the program and it reaches that particular line of code, it will pause there until the specified thread completes its task.So, it's essential to keep this in mind while implementing the code
-
+  
 # Testing
   .https://github.com/MichelleJiam/LazyPhilosophersTester              
   .To test for data races, add the flag '-fsanitize=thread' while running the program.
 # Bonus
   The only difference between the bonus part and the mandatory part is instead of using multithreading concepts, we will be using multiprocessing concepts.In this context, the threads will be replaced by child processes, while the main thread acting as the parent process. Additionally, you will work with semaphores instead of mutexes.                              
-  To explain semaphores with an analogy: When starting the simulation and having, let's say, 7 philosophers, which means we have 7 forks at the center of the table, the philosophers will simply take forks as they are served. With semaphores, we initialize them with the total number of forks available, essentially telling the philosophers, 'ATTENTION, we have this many forks available.' When a philosopher takes a fork, we decrement the count of available forks, and the reverse is true when they put a fork back.
+  let's say When starting the simulation and having, let's say 7 philosophers, so let's imagine 7 forks at the center of the table, the philosophers will simply take forks as they are served. With semaphores, we initialize them with the total number of forks available, essentially telling the philosophers, 'ATTENTION, we have this many forks available.' When a philosopher takes a fork, we decrement the count of available forks, and the reverse is true when they put a fork back.
 
 
 
