@@ -11,7 +11,7 @@ This project is both fascinating and challenging, where we will be working with 
   ## .initialization:
   I may have underestimated this aspect, but if you initialize cleanly, you can build your program seamlessly.First and foremost, we need to parse our arguments, which should 
  exclusively consist of numbers, no characters allowed 👀.            
-  Next comes the initialization of the variables we will be using.However, while planning, it's crucial to remember the variables that are accessible to all philosophers(threads).For example, all of them have access to the forks, which means our forks must be represented as an array of mutexes, with each mutex representing a fork. Additionally, we must assign each thread its unique characteristics, such as its left fork and its id...  
+  Next comes the initialization of the variables we will be using.However, while planning, it's crucial to remember the variables that are accessible to all philosophers(threads).For example, all of them have access to the forks, which means our forks must be represented as an array of mutexes, with each mutex representing a fork. Additionally, we must assign each thread its unique characteristics, such as its left fork and its id. 
   ## .the tasks:
   since I structured the tasks in a strict order eat, sleep,and then think,it made the project more manageable. My main goal was to ensure that philosophers ate properly, considering available forks. If a philosopher was sleeping(using the 'usleep' function) or didn't have a fork, they couldn't eat ahead of others. Later on, I added the sleeping and thinking components.
  ## .timestamps:
