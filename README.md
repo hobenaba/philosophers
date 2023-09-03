@@ -4,7 +4,7 @@ This project is both fascinating and challenging, where we will be working with 
   ## .what is a thread?
   When we run a program, it's managed by a process, and this process may utilize multiple CPU cores, depending on the device's capabilities. Each CPU core acts like an employee, handling one instruction of code at a time as directed by the process, which acts like a manager. In the context of threads, think of a thread as a task assigned to a core.The core then processes and executes the instructions associated with that particular thread.
  ## .the problem we would be facing ?
-   Since multiple threads can access the same memory, a problem can arise when one thread attempts to change the content of a variable in that process while another thread is doing the same simultaneously (aka data race). This can cause the program to behave improperly.This is where the role of mutexes comes into hand. We got to use them correctly to prevent such conflicts.otherwise, they can work against us.
+   Since multiple threads can access the same memory, a problem can arise when one thread attempts to change the content of a variable in that process, while another thread is doing the same simultaneously (aka data race). This can cause the program to behave improperly.This is where the role of mutexes comes into hand. We got to use them correctly to prevent such conflicts.otherwise, they can work against us.
   ## .what is a mutex
   Imagine two people and one room. When one person occupies the room, they lock the door behind them, indicating to the other person that the room is occupied. In this analogy, a mutex acts like a lock, serving as a means to control access to shared resources.
 # Plan
